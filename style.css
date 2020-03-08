@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Poiret+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    /* position: relative; */
+    font-size: 30px;
+    transition: 0.2s;
+    list-style-type: none;
+    border: 1px solid #669999;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    padding-left: 5px;
+    color: #669999;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #39d7b3;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.todolist-container {
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ccffff 24%, #66ffff 100%);
+    border-radius: 5px;
+    width:50%;
+ 
+}
+.todolist-content {
+    padding:50px;
+    align-items: center;
+   
+}
+body {
+    font-family: 'Poiret One', cursive;
+}
+
+header {
+    color:#669999;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+input {
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+    color: #669999;
+}
+
+.remove {
+    border-radius: 400px;
+}
