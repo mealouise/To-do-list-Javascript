@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
 
 * {
     box-sizing: border-box;
@@ -15,62 +16,73 @@ ul li {
     font-size: 30px;
     transition: 0.2s;
     list-style-type: none;
-    border: 1px solid #669999;
+    border: 1px solid #d9d7d7;
     background-color: white;
-    border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 5px;
     padding-left: 5px;
     color: #669999;
     display: flex;
     justify-content: space-between;
+  
 }
 
-ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #39d7b3;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-}
 
 .todolist-container {
-    margin-top: 50px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     background: linear-gradient(to bottom, #ccffff 24%, #66ffff 100%);
     border-radius: 5px;
-    width:50%;
- 
 }
+
 .todolist-content {
     padding:50px;
     align-items: center;
    
 }
 body {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Rancho', cursive;
 }
 
 header {
     color:#669999;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 30px;
+    padding-right:70px;
 }
 
 input {
-    font-size: 30px;
-    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+    font-family: 'Rancho', cursive;
+    color: #669999;
+    width: 350px;
+    padding: 5px;
+}
+
+.checked {
+    width: 350px;
+}
+
+#add {
+    font-size:30px;
+    height:65px;
+    padding-left:15px;
+    padding-right: 15px;
+    margin-left: 20px;
+}
+.edit {
+    font-size:30px;
+    height:65px;
+    margin-left:20px;
+}
+
+button {
+    background-color: #cfd9df;
     color: #669999;
 }
 
-.remove {
-    border-radius: 400px;
+.todolist-userinput {
+    padding-left: 30px;
 }
